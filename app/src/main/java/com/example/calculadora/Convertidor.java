@@ -15,7 +15,7 @@ public class Convertidor {
     }
 
     public StringTokenizer convertir () {
-        String res, temp, temp1;
+        String res, temp1;
         res = "";
         float f;
         while (cadena.hasMoreTokens()) {
