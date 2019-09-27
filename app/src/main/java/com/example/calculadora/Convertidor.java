@@ -20,8 +20,6 @@ public class Convertidor {
         float f;
         while (cadena.hasMoreTokens()) {
             temp1 = cadena.nextToken();
-            //System.out.println( temp1 );
-            //System.out.println( res );
             try
             {
                 f = Float.valueOf( temp1 );
