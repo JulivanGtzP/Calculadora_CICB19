@@ -143,22 +143,6 @@ public class Convertidor {
                             break;
                         case "POW":
                             switch ( temp1 ){
-                                case "+":
-                                    res += "#" + pila.pop();
-                                    pila.push( temp1 );
-                                    break;
-                                case "-":
-                                    res += "#" + pila.pop();
-                                    pila.push( temp1 );
-                                    break;
-                                case "*":
-                                    res += "#" + pila.pop();
-                                    pila.push( temp1 );
-                                    break;
-                                case "/":
-                                    res += "#" + pila.pop();
-                                    pila.push( temp1 );
-                                    break;
                                 case ")":
                                     temp1 = pila.pop();
                                     while ( !"(".equals(temp1) )
@@ -174,22 +158,6 @@ public class Convertidor {
                             break;
                         case "SQRT":
                             switch ( temp1 ){
-                                case "+":
-                                    res += "#" + pila.pop();
-                                    pila.push( temp1 );
-                                    break;
-                                case "-":
-                                    res += "#" + pila.pop();
-                                    pila.push( temp1 );
-                                    break;
-                                case "*":
-                                    res += "#" + pila.pop();
-                                    pila.push( temp1 );
-                                    break;
-                                case "/":
-                                    res += "#" + pila.pop();
-                                    pila.push( temp1 );
-                                    break;
                                 case ")":
                                     temp1 = pila.pop();
                                     while ( !"(".equals(temp1) )
