@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/FilaUno"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:onClick="onClickOperadores"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickOperadores"
+            android:text="0.0"
+            android:textAlignment="textEnd"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FilaDos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonOpBorrar"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonOpAltFondo"
+            android:onClick="onClickC"
+            android:text="@string/buttonOpBorrar_Text"
+            android:textColor="@color/buttonOpAltTexto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonOpSigno"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonOpAltFondo"
+            android:onClick="onClickMM"
+            android:text="@string/buttonOpSigno_Text"
+            android:textColor="@color/buttonOpAltTexto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonOpParIzq"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonOpFondo"
+            android:onClick="onClickOperadores"
+            android:text="@string/buttonOpParIzq_Text"
+            android:textColor="@color/buttonOpTexto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonOpParDer"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonOpFondo"
+            android:onClick="onClickOperadores"
+            android:text="@string/buttonOpParDer_Text"
+            android:textColor="@color/buttonOpTexto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonOpPorciento"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonOpFondo"
+            android:onClick="onClickOperadores"
+            android:text="@string/buttonOpPorciento_Text"
+            android:textColor="@color/buttonOpTexto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonOpDiv"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonOpFondo"
+            android:onClick="onClickOperadores"
+            android:text="@string/buttonOpDiv_Text"
+            android:textColor="@color/buttonOpTexto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FiaTres"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonOpPot"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonOpFondo"
+            android:onClick="onClickOperadores"
+            android:text="@string/buttonOpPot_Text"
+            android:textColor="@color/buttonOpTexto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonOpRaiz"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonOpFondo"
+            android:onClick="onClickOperadores"
+            android:text="@string/buttonOpRaiz_Text"
+            android:textColor="@color/buttonOpTexto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonDigSiete"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonDig_Fondo"
+            android:onClick="onClickDigito"
+            android:text="@string/buttonDigSiete_Text"
+            android:textColor="@color/buttonDig_Texto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonDigOcho"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonDig_Fondo"
+            android:onClick="onClickDigito"
+            android:text="@string/buttonDigOcho_Text"
+            android:textColor="@color/buttonDig_Texto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonDigNueve"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonDig_Fondo"
+            android:onClick="onClickDigito"
+            android:text="@string/buttonDigNueve_Text"
+            android:textColor="@color/buttonDig_Texto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonOpPor"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonOpFondo"
+            android:onClick="onClickOperadores"
+            android:text="@string/buttonOpPor_Text"
+            android:textColor="@color/buttonOpTexto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FilaCuatro"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonOpSen"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonOpFondo"
+            android:onClick="onClickOperadores"
+            android:text="@string/buttonOpSen_Text"
+            android:textColor="@color/buttonOpTexto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonOpCos"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonOpFondo"
+            android:onClick="onClickOperadores"
+            android:text="@string/buttonOpCos_Text"
+            android:textColor="@color/buttonOpTexto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonDigCuatro"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonDig_Fondo"
+            android:onClick="onClickDigito"
+            android:text="@string/buttonDigCuatro_Text"
+            android:textColor="@color/buttonDig_Texto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonDigCinco"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonDig_Fondo"
+            android:onClick="onClickDigito"
+            android:text="@string/buttonDigCinco_Text"
+            android:textColor="@color/buttonDig_Texto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonDigSeis"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonDig_Fondo"
+            android:onClick="onClickDigito"
+            android:text="@string/buttonDigSeis_Text"
+            android:textColor="@color/buttonDig_Texto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonOpMenos"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonOpFondo"
+            android:onClick="onClickOperadores"
+            android:text="@string/buttonOpMenos_Text"
+            android:textColor="@color/buttonOpTexto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FilaCinco"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSec"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonOpFondo"
+            android:onClick="onClickOperadores"
+            android:text="@string/buttonOpSec_Text"
+            android:textColor="@color/buttonOpTexto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonOpCSec"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonOpFondo"
+            android:onClick="onClickOperadores"
+            android:text="@string/buttonOpCsec_Text"
+            android:textColor="@color/buttonOpTexto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonDigUno"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonDig_Fondo"
+            android:onClick="onClickDigito"
+            android:text="@string/buttonDigUno_Text"
+            android:textColor="@color/buttonDig_Texto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonDigDos"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonDig_Fondo"
+            android:onClick="onClickDigito"
+            android:text="@string/buttonDigDos_Text"
+            android:textColor="@color/buttonDig_Texto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonDigTres"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonDig_Fondo"
+            android:onClick="onClickDigito"
+            android:text="@string/buttonDigTres_Text"
+            android:textColor="@color/buttonDig_Texto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonOpMas"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonOpFondo"
+            android:onClick="onClickOperadores"
+            android:text="@string/buttonOpMas_Text"
+            android:textColor="@color/buttonOpTexto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FilaSeis"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonOpTan"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonOpFondo"
+            android:onClick="onClickOperadores"
+            android:text="@string/buttonOpTan_Text"
+            android:textColor="@color/buttonOpTexto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonOpCTan"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonOpFondo"
+            android:onClick="onClickOperadores"
+            android:text="@string/buttonOpCTan_Text"
+            android:textColor="@color/buttonOpTexto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonDigCero"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/buttonDig_Fondo"
+            android:onClick="onClickDigito"
+            android:text="@string/buttonDigCero_Text"
+            android:textColor="@color/buttonDig_Texto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonDigPunto"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonDig_Fondo"
+            android:onClick="onClickDigito"
+            android:text="@string/buttonDigPunto_Text"
+            android:textColor="@color/buttonDig_Texto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonOpIgual"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonOpFondo"
+            android:onClick="onClickEqual"
+            android:text="@string/buttonOpIgual_Text"
+            android:textColor="@color/buttonOpTexto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
